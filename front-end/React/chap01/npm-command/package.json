@@ -1,0 +1,17 @@
+{
+  "name": "npm-command",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "18.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.30.0"
+  }
+}

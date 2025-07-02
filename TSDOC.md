@@ -119,4 +119,4 @@ async function postRequest<T>(url: string, data: unknown): Promise<T> {
 
 ## P.S.
 * 위 내용처럼 로직이 복잡하거나 공용으로 쓰이는 함수에 TSDoc를 작성해야 한다고 생각합니다.
-
+* 평균계산기나 간단한 공용 함수들은 작성 안해도 된다고 생각합니다. 

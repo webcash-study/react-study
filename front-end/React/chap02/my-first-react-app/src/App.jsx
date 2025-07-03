@@ -1,45 +1,22 @@
-import { Fragment } from "react";
+import Container from "./Container";
+import Destination from "./Destination";
 
-function HelloWorld() {
-  return (
-    <Fragment>
-      <h1 className="">Hello world</h1>
-      <h1>Hello world</h1>
-    </Fragment>
-  );
-}
+const App = () => {
+  const destination = [
+    {
+      place: "파리",
+      description: "에펠탑과 카페가 있는 도시",
+    },
+  ];
 
-React.createElement("h1", null, "Hello world");
-
-function Message() {
-  const name = "Alice";
-  return (
-    <input type="input" maxLength={5} stlye={{ backgroundColor: "red" }} />
-  );
-}
-
-// function Invalid() {
-//   const flag = true
-//   return <div>
-//     {
-//       if(flag) {
-//         return <div>true</div>
-//       } else {
-//         return <div>false</div>
-//       }
-//     }
-//   </div>
-// }
-
-function App() {
   return (
     <div>
-      <hr />
-      <HelloWorld />
-      {/* <helloWorld /> */}
-      <Message />
+      <Container>여행 지역</Container>
+      <Destination place="파리" description="에펠탑과 카페가 있는 도시" />
+      <Destination {...destination[0]} />
+      <Destination />
     </div>
   );
-}
+};
 
 export default App;

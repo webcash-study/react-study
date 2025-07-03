@@ -119,4 +119,6 @@ async function postRequest<T>(url: string, data: unknown): Promise<T> {
 
 ## P.S.
 * 위 내용처럼 로직이 복잡하거나 공용으로 쓰이는 함수에 TSDoc를 작성해야 한다고 생각합니다.
-* 평균계산기나 간단한 공용 함수들은 작성 안해도 된다고 생각합니다. 
+* 공용 함수라도 기능이 단순하다면 TSDoc을 생략해도 된다고 생각합니다다. 
+  * 예: `const formatPrice = (price: number) => price.toLocaleString()`
+  * 이유: 간단한 함수에 문서를 추가하면 오히려 코드 가독성이 떨어질 수 있음 

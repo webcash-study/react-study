@@ -10,6 +10,21 @@
   flex-grow: 1;
 }
 
+.todo-item-text.completed {
+  text-decoration: line-through;
+}
+
+.todo-edit-input {
+  flex-grow: 1;
+  border: 1px solid gray;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
 .todo-item-button {
   width: 30px;
   height: 30px;

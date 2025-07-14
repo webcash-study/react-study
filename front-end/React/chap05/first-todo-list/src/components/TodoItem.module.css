@@ -1,0 +1,39 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  gap: 12px;
+  padding: 0 12px;
+}
+
+.todo-item-text {
+  flex-grow: 1;
+}
+
+.todo-item-text.completed {
+  text-decoration: line-through;
+}
+
+.todo-edit-input {
+  flex-grow: 1;
+  border: 1px solid gray;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+.todo-item-button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.todo-item-checkbox {
+  width: 16px;
+  height: 16px;
+}

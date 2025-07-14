@@ -7,7 +7,7 @@ export const DELETE_TODO_COMPLETED = "DELETE_TODO_COMPLETED";
 export const SET_FILTER = "SET_FILTER";
 
 export const init = () => {
-  const savedTodo = JSON.parse(window.localStorage.getItem("TODO") || []);
+  const savedTodo = JSON.parse(window.localStorage.getItem("TODO") || "[]");
   const savedID = JSON.parse(window.localStorage.getItem("ID") || 0);
   return {
     list: savedTodo,

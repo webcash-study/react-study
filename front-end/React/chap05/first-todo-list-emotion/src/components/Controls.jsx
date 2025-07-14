@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import styles from "./Controls.module.css";
 import { TodoContext } from "../context";
 import { ADD_TODO, SET_FILTER } from "../reducer";
 import styled from "@emotion/styled";
